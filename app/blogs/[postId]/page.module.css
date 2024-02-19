@@ -1,0 +1,114 @@
+.deleteMessage {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.editingForm {
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 570px;
+    background-color: aquamarine;
+    margin-top: 2rem;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputLabel {
+    font-weight: bold;
+}
+
+.input {
+    border-radius: 10px;
+    height: 2rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+}
+
+.selection {
+    border-radius: 10px;
+    height: 2rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+}
+
+.individualPostContainer {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: aquamarine;
+    max-width: 470px;
+}
+
+.individualPostImage {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.tagDateWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tagWrapper {
+    display: flex;
+    background-color: #add8e6;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+
+.tagWrapper:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.individualPostTag {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.individualPostDate {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.confirmationQuestion {
+    margin-top: 1rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: darkred;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.adminButton {
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem;
+    background-color: #add8e6;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.adminButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}

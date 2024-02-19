@@ -1,0 +1,41 @@
+.headerContainer {
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 10rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 24.5rem;
+    width: 100%;
+}
+  
+.nameWrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+  
+.mirrorImage {
+    transform: scaleX(-1);
+}
+  
+.mainHeading {
+    font-style: italic;
+}
+  

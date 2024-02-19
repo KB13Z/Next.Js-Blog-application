@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.668);
+  background-color: #add8e6;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+

@@ -1,0 +1,16 @@
+.navigation {
+    display: flex;
+    gap: 3rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+.navigationLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigationLink:hover {
+    text-shadow: 1px 0;
+    transition: 0.4s;
+}

@@ -1,0 +1,40 @@
+{
+  "name": "blog-application",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/draftjs-to-html": "^0.8.4",
+    "axios": "^1.6.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.4",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^4.17.2",
+    "mongoose": "^8.0.3",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
+    "query-string": "^8.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-draft-wysiwyg": "^1.15.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/draft-js": "^0.11.17",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-draft-wysiwyg": "^1.13.8",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
+  }
+}

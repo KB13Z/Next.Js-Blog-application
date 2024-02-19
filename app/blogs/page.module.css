@@ -1,0 +1,94 @@
+.blogsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogsContainer {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+.blogPost {
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: aquamarine;
+    max-width: 420px;
+}
+
+.blogPost:hover {
+    cursor: default;
+}
+
+.selectedImage {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.blogPostLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blogPostTitle {
+    margin-top: 0.5rem;
+}
+
+.blogPostTitle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.tagDateWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tagWrapper {
+    display: flex;
+    background-color: #add8e6;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+
+.tagWrapper:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.blogPostTag {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blogPostDate {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.pagination {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.paginationButton {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+.paginationButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}

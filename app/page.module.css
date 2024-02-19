@@ -1,0 +1,78 @@
+.homepage {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 5rem;
+  gap: 2rem;
+}
+
+.introductionText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mirroredCat {
+  transform: scaleX(-1);
+}
+
+.sectionGreen {
+  display: flex;
+  gap: 4rem;
+  background-color: aquamarine;
+  padding: 2rem 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  gap: 1rem;
+}
+
+.catsImage {
+  border-radius: 15px;
+}
+
+.sectionBlue {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem 5rem;
+}
+
+.signButton {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem;
+  background-color: aquamarine;
+  font-weight: bold;
+  width: fit-content;
+  display: flex;
+  align-self: center;
+}
+
+.signButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 15rem;
+  background-color: aquamarine;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+

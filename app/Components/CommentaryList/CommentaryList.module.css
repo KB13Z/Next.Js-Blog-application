@@ -1,0 +1,170 @@
+.commentariesContainer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 470px;
+}
+
+.commentaryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: aquamarine;
+}
+
+.formTitle {
+    margin-bottom: 0.5rem;
+}
+
+.formInputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentaryFormLabel {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.formInput {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.commentaryFormTextarea {
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: none;
+}
+
+.error {
+    font-style: italic;
+    font-size: 12px;
+    color: red;
+    text-align: center;
+}
+
+.commentaryButtonWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.commentaryFormSubmitButton {
+    width: fit-content;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #add8e6;
+    font-weight: bold;
+}
+
+.commentaryFormSubmitButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.commentaryFormSubmitButton[disabled]:hover {
+    cursor: default;
+    transform: none;
+}
+
+.commentariesWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.commentariesTitle {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.noCommentariesMessage {
+    font-style: italic;
+    line-height: 2rem;
+}
+
+.commentary {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: aquamarine;
+    text-align: justify;
+}
+
+.commentaryAuthor {
+    font-weight: bold;
+}
+
+.commentaryDate {
+    font-size: 12px;
+    opacity: 0.5;
+    text-align: end;
+}
+
+.deleteQuestion {
+    text-align: center;
+    font-weight: bold;
+    color: darkred;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.adminButton {
+    width: fit-content;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #add8e6;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.adminButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.paginationButton {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+.paginationButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
