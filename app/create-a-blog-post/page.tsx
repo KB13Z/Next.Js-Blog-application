@@ -134,7 +134,9 @@ export default function CreateBlogPost() {
           </div>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel}>Description*:</label>
-            <TextEditor value={description} onChange={handleDescriptionChange} description={description}/>
+            {typeof window !== 'undefined' && (
+              <TextEditor value={description} onChange={handleDescriptionChange} description={description}/>
+            )}
           </div>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel}>Add image*:</label>
