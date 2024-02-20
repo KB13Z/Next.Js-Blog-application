@@ -2,8 +2,10 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import axios from 'axios'
-import TextEditor from '../Components/TextEditor/TextEditor'
 import styles from './page.module.css'
+import dynamic from 'next/dynamic';
+
+const TextEditor = dynamic(() => import('../Components/TextEditor/TextEditor'), { ssr: false });
 
 interface ImageOption {
   value: string;
