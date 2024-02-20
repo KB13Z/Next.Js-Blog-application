@@ -19,7 +19,7 @@ export default function RootLayout({
   username,
   handleSignOut,
 }: {
-  children?: React.ReactNode;
+  children: React.ReactNode;
   isAuthenticated: boolean;
   username: string;
   handleSignOut: () => Promise<void>;
