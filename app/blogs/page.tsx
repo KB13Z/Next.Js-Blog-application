@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState, useCallback } from 'react'
-import { useRouter, usePathname, useSearchParams } from 'next/navigation'
-import queryString from 'query-string'
+import { usePathname, useSearchParams } from 'next/navigation'
 import Image from 'next/image'
 import axios from 'axios'
 import Link from 'next/link'
@@ -17,55 +16,40 @@ interface BlogPost {
 }
 
 const Blogs: React.FC = () => {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
-  const [selectedTag, setSelectedTag] = useState<string>('');
 
-  const fetchAllBlogPosts = useCallback(async () => {
+  const fetchBlogPosts = useCallback(async (page: number, tag?: string) => {
     try {
-      const response = await axios.get(`/api/getBlogPosts?page=${currentPage}`);
+      const response = await axios.get(`/api/getBlogPosts?page=${page}&tag=${tag || ''}`);
       setBlogPosts(response.data);
       setTotalPages(response.headers['x-total-pages']);
     } catch (error) {
-      console.error('Error fetching all blog posts:', error);
-    }
-  }, [currentPage]);
-
-  const fetchTagBlogPosts = useCallback(async () => {
-    try {
-      const response = await axios.get(`/api/getBlogPosts?page=${currentPage}&tag=${selectedTag}`);
-      setBlogPosts(response.data);
-      setTotalPages(response.headers['x-total-pages']);
-    } catch (error) {
-      console.error('Error fetching blog posts with tag:', error);
-    }
-  }, [currentPage, selectedTag]);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const { tag } = queryString.parse(window.location.search);
-      setSelectedTag(tag as string || '');
+      console.error('Error fetching blog posts:', error);
     }
   }, []);
 
   useEffect(() => {
-    if (pathname === '/blogs' && !searchParams?.get('tag')) {
-      fetchAllBlogPosts();
-    } else {
-      const tag = searchParams?.get('tag') || '';
-      setSelectedTag(tag);
-      fetchTagBlogPosts();
-    }
-  }, [pathname, searchParams, fetchAllBlogPosts, fetchTagBlogPosts]);
+    const fetchData = async () => {
+      if (typeof window !== 'undefined') {
+        const tag = searchParams?.get('tag') ?? '';
+        await fetchBlogPosts(currentPage, tag);
+      } else {
+        const tag = searchParams?.get('tag') ?? '';
+        await fetchBlogPosts(currentPage, tag);
+      }
+    };
+
+    fetchData();
+  }, [pathname, searchParams, currentPage, fetchBlogPosts]);
 
   const handleTagClick = (tag: string) => {
     const lowerCaseTag = tag.toLowerCase();
     const tagRoute = `/blogs?tag=${lowerCaseTag}`;
-    router.push(tagRoute);
+    window.location.href = tagRoute;
   };
 
   const handleNextPage = () => {
