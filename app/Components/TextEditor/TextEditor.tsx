@@ -19,10 +19,13 @@ const TextEditor: React.FC<TextEditorProps> = ({ value, onChange, description })
     });
 
     const [startedTyping, setStartedTyping] = useState<boolean>(false);
+    const [characterCount, setCharacterCount] = useState<number>(0);
 
     useEffect(() => {
         if (description.trim() !== '') {
             setStartedTyping(true);
+            const plainText = description.replace(/<[^>]+>/g, '');
+            setCharacterCount(plainText.length);
         }
     }, [description]);
 
@@ -30,8 +33,7 @@ const TextEditor: React.FC<TextEditorProps> = ({ value, onChange, description })
         setEditorState(editorState);
         const rawContentState = convertToRaw(editorState.getCurrentContent());
         const htmlContent = draftToHtml(rawContentState);
-        const plainText = htmlContent.replace(/<[^>]+>/g, '');
-        onChange(plainText);
+        onChange(htmlContent);
         setStartedTyping(true);
     };
 
@@ -47,7 +49,7 @@ const TextEditor: React.FC<TextEditorProps> = ({ value, onChange, description })
                     options: ['inline', 'list', 'textAlign']
                 }}
             />
-            {startedTyping && (description.length < 10 || description.length > 300) && (
+            {startedTyping && (characterCount < 10 || characterCount > 300) && (
                 <p className="error-message">Description must be between 10 and 300 characters long</p>
             )}
         </>

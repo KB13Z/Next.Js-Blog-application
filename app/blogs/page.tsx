@@ -46,8 +46,10 @@ const Blogs: React.FC = () => {
   }, [currentPage, selectedTag]);
 
   useEffect(() => {
-    const { tag } = queryString.parse(window.location.search);
-    setSelectedTag(tag as string || '');
+    if (typeof window !== 'undefined') {
+      const { tag } = queryString.parse(window.location.search);
+      setSelectedTag(tag as string || '');
+    }
   }, []);
 
   useEffect(() => {
