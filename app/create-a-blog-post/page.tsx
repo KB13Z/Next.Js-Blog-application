@@ -189,7 +189,9 @@ export default function CreateBlogPost() {
                   </div>
                 )} <br />
                 <p className={styles.previewTitle}>{title}</p><br />
-                <div dangerouslySetInnerHTML={{ __html: description }} /><br />
+                {typeof window !== 'undefined' && (
+                  <div dangerouslySetInnerHTML={{ __html: description }} />
+                )}<br />
                 <div className={styles.previewTagWrapper}>
                   <p className={styles.previewTag}>{selectedOption}</p>
                 </div>
