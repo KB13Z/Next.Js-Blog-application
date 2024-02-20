@@ -134,9 +134,7 @@ export default function CreateBlogPost() {
           </div>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel}>Description*:</label>
-            {typeof window !== 'undefined' && (
-              <TextEditor value={description} onChange={handleDescriptionChange} description={description}/>
-            )}
+            <TextEditor value={description} onChange={handleDescriptionChange} description={description}/>
           </div>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel}>Add image*:</label>
@@ -191,9 +189,7 @@ export default function CreateBlogPost() {
                   </div>
                 )} <br />
                 <p className={styles.previewTitle}>{title}</p><br />
-                {typeof window !== 'undefined' && (
-                  <div dangerouslySetInnerHTML={{ __html: description }} />
-                )}<br />
+                <div dangerouslySetInnerHTML={{ __html: description }} /><br />
                 <div className={styles.previewTagWrapper}>
                   <p className={styles.previewTag}>{selectedOption}</p>
                 </div>
