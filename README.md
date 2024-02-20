@@ -22,6 +22,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Open [https://next-js-blog-application-one.vercel.app](https://next-js-blog-application-one.vercel.app) to see live app.
+
 To sign in to blog, use predefined user info (access.txt) or make a new user, by signing up.
 
 
