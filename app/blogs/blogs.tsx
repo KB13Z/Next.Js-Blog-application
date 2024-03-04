@@ -83,7 +83,7 @@ const Blogs: React.FC = () => {
                 {post.title}
               </h3>
             </Link><br />
-            <div dangerouslySetInnerHTML={{ __html: post.description.length > 60 ? `${post.description.slice(0, 60)}...` : post.description}} />
+            <div dangerouslySetInnerHTML={{ __html: post.description.length > 60 ? `${post.description.slice(0, 60)}...` : post.description}} className={styles.postDescription} />
             <br /><br />
             <div className={styles.tagDateWrapper}>
               <div className={styles.tagWrapper}>
