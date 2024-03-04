@@ -21,10 +21,15 @@
 
 @media (max-width: 767px) {
     .navigation {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         padding-bottom: 1rem;
+    }
+
+    .navigationLink {
+        font-size: 18px;
     }
 
     .verticalDivider {

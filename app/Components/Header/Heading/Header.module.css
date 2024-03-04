@@ -76,4 +76,8 @@
   .headerImage {
     display: none;
   }
+
+  .mainHeading {
+    font-size: 24px;
+  }
 }
