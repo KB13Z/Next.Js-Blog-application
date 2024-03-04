@@ -29,6 +29,7 @@ export default function Header({ isAuthenticated, onSignOut, username }: HeaderP
                     src="./kitty.svg"
                     width={40}
                     height={40}
+                    className={styles.headerImage}
                     alt="Kitty"
                 />
             </div>

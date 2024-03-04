@@ -38,4 +38,42 @@
 .mainHeading {
     font-style: italic;
 }
-  
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 2rem;
+  }
+
+  .headerWrapper {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerContainer {
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerWrapper {
+    padding-left: 0;
+  }
+
+  .mirrorImage {
+    display: none;
+  }
+
+  .headerImage {
+    display: none;
+  }
+}

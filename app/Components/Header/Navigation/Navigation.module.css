@@ -14,3 +14,27 @@
     text-shadow: 1px 0;
     transition: 0.4s;
 }
+
+.horizontalDivider {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .verticalDivider {
+        display: none;
+    }
+
+    .horizontalDivider {
+        display: flex;
+        height: 1px;
+        width: 100%;
+        border-color: rgba(0, 0, 0, 0.668);
+    }
+}
