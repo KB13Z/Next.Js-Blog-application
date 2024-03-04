@@ -28,7 +28,7 @@ const SignIn = () => {
 
     return (
         <div className={styles.loginFormContainer}>
-            <h3>Sign in</h3>
+            <h3 className={styles.loginFormHeading}>Sign in</h3>
             <form className={styles.loginForm} onSubmit={handleSubmit}>
                 <div className={styles.inputWrapper}>
                     <label>E-mail:</label>

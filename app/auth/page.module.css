@@ -8,6 +8,8 @@
     border-radius: 10px;
     padding: 2rem;
     background-color: aquamarine;
+    margin-bottom: 2rem;
+    width: 350px;
 }
 
 .loginForm {
@@ -15,17 +17,18 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    width: 100%;
 }
 
 .inputWrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .loginFormInput {
     padding: 0.5rem;
     border-radius: 10px;
-    width: 20vw;
 }
 
 .loginFormButtonWrapper {
@@ -49,4 +52,18 @@
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+@media (max-width: 450px) {
+    .loginFormContainer {
+        width: calc(100% - 5rem);
+    }
+
+    .loginFormHeading {
+        font-size: 16px;
+    }
+
+    .loginForm {
+        font-size: 14px;
+    }
 }

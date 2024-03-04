@@ -16,24 +16,26 @@
     border-radius: 10px;
     background-color: aquamarine;
     margin-top: 3rem;
-    max-width: 370px;
+    margin-bottom: 2rem;
+    width: 350px;
 }
 
 .registerForm {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
 .inputWrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .registerFormInput {
     padding: 0.5rem;
     border-radius: 10px;
-    width: 20vw;
 }
 
 .errorMessage {
@@ -59,4 +61,18 @@
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+@media (max-width: 450px) {
+    .registerFormContainer {
+        width: 80vw;
+    }
+
+    .registerFormHeading {
+        font-size: 16px;
+    }
+
+    .registerForm {
+        font-size: 14px;
+    }
 }

@@ -52,7 +52,7 @@ const Register = () => {
             <div className={styles.successMessage}>{registrationMessage}</div>
             <div className={styles.successMessage}>{redirectMessage}</div>
             <div className={styles.registerFormContainer}>
-                <h3>Register</h3>
+                <h3 className={styles.registerFormHeading}>Register</h3>
                 <form className={styles.registerForm} onSubmit={handleSubmit}>
                     <div className={styles.inputWrapper}>
                         <label>Username:</label>
