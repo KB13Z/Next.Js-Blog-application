@@ -14,6 +14,15 @@
     max-width: 570px;
     background-color: aquamarine;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 650px) {
+    .editingForm {
+        width: auto;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
 }
 
 .inputWrapper {
@@ -111,4 +120,47 @@
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.3s;
+}
+
+@media (max-width: 550px) {
+    .editingForm {
+        font-size: 14px;
+    }
+
+    .individualPostContainer {
+        max-width: fit-content;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .individualPostImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .individualPostTitle {
+        font-size: 14px;
+    }
+
+    .individualPostDescription {
+        font-size: 14px;
+    }
+
+    .tagDateWrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .individualPostTag {
+        font-size: 10px;
+    }
+
+    .individualPostDate {
+        font-size: 10px;
+    }
+
+    .adminButton {
+        font-size: 12px;
+    }
 }

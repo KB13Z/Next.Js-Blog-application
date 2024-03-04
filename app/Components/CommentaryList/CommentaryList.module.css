@@ -168,3 +168,59 @@
     transform: scale(1.1);
     transition: 0.5s;
 }
+
+@media screen and (max-width: 550px) {
+    .commentariesContainer {
+        width: 100vw;
+    }
+
+    .commentaryForm {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .formTitle {
+        font-size: 14px;
+    }
+
+    .commentaryFormLabel {
+        font-size: 14px;
+    }
+
+    .commentariesWrapper {
+        width: 100vw;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .commentariesTitle {
+        font-size: 14px;
+    }
+
+    .commentaryAuthor {
+        font-size: 14px;
+    }
+
+    .commentaryText {
+        font-size: 14px;
+    }
+
+    .commentaryDate {
+        font-size: 10px;
+    }
+
+    .noCommentariesMessage {
+        width: 80vw;
+        white-space: normal !important;
+        font-size: 14px;
+    }
+
+    .commentary {
+        width: calc(100% - 4rem);
+        margin-right: 2rem;
+    }
+
+    .pagination {
+        font-size: 14px;
+    }
+}

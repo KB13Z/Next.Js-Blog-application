@@ -172,7 +172,7 @@ const CommentaryList: React.FC<CommentaryListProps> = ({ postId }) => {
             <div key={commentary._id} className={styles.commentary}>
               <div>
                 <p className={styles.commentaryAuthor}>{commentary.author}:</p><br />
-                <p>{commentary.text}</p><br />
+                <p className={styles.commentaryText}>{commentary.text}</p><br />
                 <p className={styles.commentaryDate}>Created At: {new Date(commentary.createdAt).toLocaleString()}</p>
               </div>
               {deleteConfirmationId === commentary._id ? (

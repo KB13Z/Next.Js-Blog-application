@@ -191,8 +191,8 @@ const IndividualBlogPost = ({ params }: { params: { postId: string } }) => {
                   className={styles.individualPostImage} />
               </div>
             )}
-            <h3>{title}</h3><br />
-            <div dangerouslySetInnerHTML={{ __html: description }} /><br /><br />
+            <h3 className={styles.individualPostTitle}>{title}</h3><br />
+            <div className={styles.individualPostDescription} dangerouslySetInnerHTML={{ __html: description }} /><br /><br />
             <div className={styles.tagDateWrapper}>
               <div className={styles.tagWrapper}>
                 {tag && <p className={styles.individualPostTag}>{tag}</p>}
