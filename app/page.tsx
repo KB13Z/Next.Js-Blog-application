@@ -24,6 +24,7 @@ export default function Home() {
           src="/cat-reaching.svg"
           width={160}
           height={200}
+          className={styles.reachingCat}
           alt="Cat on back paws"
         />
         <div className={styles.introductionText}>
