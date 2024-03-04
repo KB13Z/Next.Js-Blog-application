@@ -122,7 +122,7 @@ export default function CreateBlogPost() {
 
   return (
       <div className={styles.createBlogContainer}>
-        <h2>Create a new blog post</h2>
+        <h2 className={styles.createBlogHeading}>Create a new blog post</h2>
         <form className={styles.blogForm} onSubmit={handleSubmit}>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel}>Title*:</label>

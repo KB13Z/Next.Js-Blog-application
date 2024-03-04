@@ -158,3 +158,32 @@
     font-size: 10px;
     font-weight: bold;
 }
+
+@media (max-width: 650px) {
+    .createBlogHeading {
+        font-size: 22px;
+    }
+
+    .blogForm {
+        width: auto;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 530px) {
+    .previewContainer {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .preview {
+        width: fit-content;
+        font-size: 14px;
+    }
+
+    .selectedImage {
+        width: 100%;
+        height: auto;
+    }
+}
